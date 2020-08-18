@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="forVidly.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <title>Vidly</title>
+</head>
+<body>
+    <div class="main container-cm d-inline">
+        <!-- basliq ve navbar -->   
+        
+        <div class="header container-cm d-inline ">
+            <div class="d-inline" >
+                 <img src="v-bucks.png" style="width: 5em; height: 5em;" alt="">
+             </div>
+            <h1 class="text-center d-inline" id="vidly"><b>Vidly </b></h1>           
+        </div>
+        <nav class="navbar navbar-expand-sm  navbar-dark">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Customers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+            </ul>
+          </nav>
+        <hr>
+        <!-- sign in ve register hissesi -->
+        <div class="Sign-in-register d-flex justify-content-between">
+            <div class="d-inline sign-in">Sign in</div>
+            
+            <div class="d-inline register"> or <a href="#">Register as a new user</a></div>
+        </div>
+        <!-- ile baglantilari -->
+        <div class="with-account">
+            <button type="button" class="btn btn-primary btn-block">Sing in with Facebook</button>
+            <button type="button" class="btn btn-danger btn-block">Sign in with Google</button>
+            <button type="button" class="btn btn-success btn-block">Sign in with Microsoft</button>
+        </div>
+        <!-- or olan hisse -->
+        <hr style="width: 46%; float: left;">
+        <h6 class="d-inline text-center" style="color: rgb(128, 128, 128) ;font-size: small;">or</h6>
+        <hr style="width: 50%; float: right;">
+        <!-- form hissesi -->
+        <div>
+            <form action="/action_page.php">
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" name="remember"> I agree blabla
+                    </label>
+                  </div>
+                <div class="form-group form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+        <hr>
+    </div>
+</body>
+</html>
